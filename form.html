@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form.html</title>
+</head>
+<body>
+    <form>
+        ID : <input type="text"><br>
+        PW : <input type="password"><br>
+        성별 : <input type="radio" name="info" checked>여 &nbsp;<input type="radio" name="info">남<br>
+        취미 : <input type="checkbox" name="hobby1" checked>등산&nbsp;&nbsp;
+        <input type="checkbox" name="hobby2">독서&nbsp;&nbsp;
+        <input type="checkbox" name="hobby3">게임&nbsp;&nbsp;
+        <input type="checkbox" name="hobby4">영화감상&nbsp;&nbsp;<br>
+        이메일 : <input type="text">@
+            <select>
+                <option>선택</option>
+                <option>naver.com</option>
+                <option>hanmail.net</option>
+                <option>gmail.com</option>
+                <option>직접 입력</option>
+            </select><br>
+        자기소개 :<br>
+        <textarea rows="6" cols="50">10자 이상 입력</textarea><br>
+        사진첨부 <input type="file"><br>
+        <button type="button">확인</button>
+        <button type="reset">초기화</button>
+        <button type="submit">가입완료</button>
+<!--        전송하기 위해서는 form 뒤에 action="" 입력-->
+    </form>
+</body>
+</html>
