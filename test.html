@@ -10,66 +10,68 @@
 
 </head>
 <body>
-    <table>
+    <table cellspacing="0" cellpadding="4" width="700">
         <tr>
-            <td bgcolor="#3DB7CC">사용자 정보입력</td></tr><br>
+            <td bgcolor="#3DB7CC"><b><font size="2" color="#FFFFFF">사용자 정보입력</font></b></td>
+        </tr><br>
             <td>안녕하세요. 해당 홈페이지를 자유롭게 이용하려면 회원가입을 하셔야 합니다.<br>
-            아래의 사항들을 빠짐없이 기록해주세요.</td></tr>
+            아래의 사항들을 빠짐없이 기록해주세요.</td>
+        </tr>
     </table><br><br>
 
 
-
-    <table border="black">
+        <form name="member" action="join.jsp" method="get">
+    <table border="1" cellspacing="0" cellpadding="4" width="700">
         <tr>
-            <td bgcolor="#FFA7A7">사용자ID</td>
+            <td bgcolor="#FFA7A7" align="center"><b>사용자ID</b></td>
             <td colspan="3"><input type="text"> <button type="button">중복확인</button></td>
 <!--            <td></td>-->
 <!--            <td></td>-->
         </tr>
         <tr>
-            <td bgcolor="#FFA7A7">비밀번호</td>
+            <td bgcolor="#FFA7A7" align="center"><b>비밀번호</b></td>
             <td><input type="password"></td>
-            <td bgcolor="#FFA7A7">비밀번호 확인</td>
+            <td bgcolor="#FFA7A7" align="center"><b>비밀번호 확인</b></td>
             <td><input type="password"></td>
         </tr>
         <tr>
-            <td bgcolor="#FFA7A7">사용자 이름</td>
+            <td bgcolor="#FFA7A7" align="center"><b>사용자 이름</b></td>
             <td colspan="3"><input type="text">
 <!--            <td></td>-->
 <!--            <td></td>-->
         </tr>
         <tr>
-            <td bgcolor="#FFA7A7">주민등록번호</td>
+            <td bgcolor="#FFA7A7" align="center"><b>주민등록번호</b></td>
             <td colspan="3"><input type="text" maxlength="6">-<input type="password" maxlength="7"></td>
 <!--            <td></td>-->
 <!--            <td></td>-->
         </tr>
         <tr>
-            <td bgcolor="#FFA7A7">생년월일</td>
+            <td bgcolor="#FFA7A7" align="center"><b>생년월일</b></td>
             <td><input type="text"></td>
-            <td bgcolor="#FFA7A7">성별</td>
+            <td bgcolor="#FFA7A7" align="center"><b>성별</b></td>
             <td><input type="radio" name="info" checked>여 &nbsp;<input type="radio" name="info">남</td>
         </tr>
         <tr>
-            <td bgcolor="#FFA7A7">우편번호</td>
+            <td bgcolor="#FFA7A7" align="center"><b>우편번호</b></td>
             <td colspan="3"><input type="text">-<input type="text"><button type="button">우편번호검색</button></td>
 <!--            <td></td>-->
 <!--            <td></td>-->
         </tr>
         <tr>
-            <td bgcolor="#FFA7A7">주소</td>
-            <td colspan="3"><input type="text"></td>
+            <td bgcolor="#FFA7A7" align="center"><b>주 소</b></td>
+            <td colspan="3"><input type="text" size="60"></td>
 <!--            <td></td>-->
 <!--            <td></td>-->
         </tr>
         <tr>
-            <td bgcolor="#FFA7A7">나머지 주소</td>
-            <td colspan="3"><input type="text" ></td>
+            <td bgcolor="#FFA7A7" align="center"><b>나머지 주소</b></td>
+            <td colspan="3"><input type="text" size="30"></td>
 <!--            <td></td>-->
 <!--            <td></td>-->
         </tr>
         <tr>
-            <td bgcolor="#FFA7A7">E-Mail</td>
+            <td bgcolor="#FFA7A7" align="center"><b>E-Mail</b></td>
             <td colspan="3">
                 <input type="text">@
             <select>
@@ -83,7 +85,7 @@
 <!--            <td></td>-->
         </tr>
         <tr>
-            <td bgcolor="#FFA7A7">직업</td>
+            <td bgcolor="#FFA7A7" align="center"><b>직업</b></td>
             <td colspan="3">
                 <select>
                 <option>컴퓨터/정보통신</option>
@@ -97,11 +99,15 @@
         </tr>
         <tr>
             <td colspan="4">
-                <button type="submit">등록</button>
-                <button type="button">취소</button>
+                <input type="submit" value="등  록">
+                <input type="reset" value="취  소">
+<!--                <button type="submit">등 록</button>-->
+<!--                <button type="button">취 소</button>-->
             </td>
         </tr>
     </table>
+        </form>
+
 
 
 </body>
